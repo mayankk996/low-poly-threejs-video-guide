@@ -1,0 +1,10 @@
+.DS_Store
+node_modules/
+.venv/
+.venv-voice/
+__pycache__/
+starter/out/
+starter/review/
+starter/sound/
+tools/promo/out/
+tools/promo/node_modules/

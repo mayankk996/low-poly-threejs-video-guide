@@ -1,0 +1,58 @@
+You are my animation director and developer. Make a vertical low poly "What if...?" video with no narrator: one strange change happens to "you" and gets worse in sharp pulses, while sound effects and physics tell the story.
+
+FIRST, ASK ME
+Ask these questions and wait for my answers. Don't write anything before that.
+1. What is the what-if? Offer me 5 peculiar or funny ideas about my own body or daily life if I don't have one.
+2. Who would a viewer send this to, and why?
+3. What does the hero look like?
+4. How long should it be, from 40 to 80 seconds?
+5. Which sound effects library am I licensed to use?
+Then give me 3 opening pulses to choose from.
+
+THE FILM
+- 1080x1920, 30 fps. Hero in the middle of a colourful world.
+- Build in three.js 0.186 and render frame by frame through headless Chrome using playwright-core, then join frames with ffmpeg.
+- Every frame must be a pure function of time. Seed all randomness, so any stretch can be re-rendered on its own.
+- Keep any API keys in environment variables, never in project files.
+
+THE LOOK
+- Low poly with flat shading, saturated popping colours and a strong sun with real shadows.
+- One colour belongs to the hero and nothing else. Put detail on the hero. The world can be many simple boxes.
+- The hero has a readable, reacting face. Invent an original character with no name or brand on the clothes. Don't copy any existing creator's characters or shots.
+- Picture chain: HDR render, motion blur from averaged sub-frames, bloom on bright sources only, tone mapping, slight grain and vignette.
+
+THE STORY
+- A list of pulses about 2.6 seconds apart. Each pulse has a number, a short line and bigger damage than the last, in both picture and sound.
+- Each pulse lands, then holds a moment so the eye can read it.
+- Use real arithmetic. Show me the working. For example, 70 kg doubling 15 times is 2,294 tonnes.
+- Show the change on the hero's body first, then on the world. Cut to a reaction close-up at least twice.
+- Imply anything gross and never show it.
+- The last screen asks a question that makes people reply. Never ask for a like.
+
+PHYSICS
+- Use cannon-es rigid bodies, baked once when the page loads at a fixed 60 steps a second. Frames only look up the result by time.
+- Each pulse is an outward force with a power and a radius. Raise both a little each pulse.
+- Hide any mesh within 3.2 units of the camera, so debris can't pass through the lens.
+
+CAMERA
+- Keys of time, position, look-at and field of view. Cuts land inside camera movement, never after easing to a stop.
+- Slow drift between pulses, and a sharp shake on each hit that flips direction every frame and dies in about 7 frames.
+- Each pulse gets a new angle, usually lower and wider as the hero grows.
+
+WORDS ON SCREEN
+- One short line per pulse in capitals, and one big number that counts up.
+- Nothing that matters in the top 210 px, bottom 310 px or right 84 px. For Instagram, also nothing below y 1570 or right of x 940 in the lower half.
+- The film must make sense with the sound off.
+
+SOUND
+- A few exact hits from a library I am licensed to use. One big impact per pulse, each bigger than the last. A short rise before each and a beat of near-silence before the biggest. No looping ambience.
+- Master at -14 LUFS with true peak at or under -1.5 dBTP.
+
+PROMO
+- Also make a short promo: me talking to camera, the film playing uncut in a glowing window, captions near y 1440 with the spoken word in orange, a comment bar that types a word exactly as I say it, then a blurred last frame with very little text held about 1.3 seconds.
+- Keep my voice as recorded with 5 ms fades on cuts. Measure every element against the safe area in a real browser. No song in the file: I add a licensed song in the app when I post.
+
+CHECK YOUR WORK
+- After the first render, make a sheet of one frame per shot, a sheet of each shot's first and last frames, and a sheet of the whole film every 12 frames. Look at them. Check for cut-off text, hidden faces, bodies passing through each other and a camera inside a building, then fix what you find before showing me.
+- Render a second run of one stretch and confirm it matches the first.
+- At the end, tell me plainly what you checked and what you could not verify. If you cannot look at frames or hear sound yourself, say so, and tell me exactly what to look and listen for.

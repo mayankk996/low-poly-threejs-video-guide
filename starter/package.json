@@ -1,0 +1,11 @@
+{
+  "name": "low-poly-film",
+  "private": true,
+  "type": "module",
+  "description": "A low poly what-if film built in three.js and rendered frame by frame through Chrome",
+  "dependencies": {
+    "cannon-es": "0.20.0",
+    "playwright-core": "1.64.1",
+    "three": "0.186.1"
+  }
+}

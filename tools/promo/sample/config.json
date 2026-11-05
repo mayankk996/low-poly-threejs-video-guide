@@ -1,0 +1,23 @@
+{
+  "take": "raw/take.mp4",
+  "film": "raw/film.mp4",
+  "segments": [[0.0, 2.6], [3.1, 9.5], [10.0, 15.0]],
+  "film_in": 3.5,
+  "film_out": 9.0,
+  "film_start": 0,
+  "comment_at": 10.2,
+  "comment_said": [11.3, 11.8],
+  "comment_word": "GUIDE",
+  "mute": [],
+  "sfx": {},
+  "logos": [],
+  "captions": [
+    [["I", 0.2], ["MADE", 0.4], ["THIS", 0.75]],
+    [["WITH", 1.1], ["FREE", 1.35], ["TOOLS", 1.8]],
+    [["WATCH", 3.3], ["THIS", 3.7]],
+    [["NO", 9.0], ["CAMERA", 9.2]],
+    [["COMMENT", 10.4], ["THE", 10.9], ["WORD", 11.0]],
+    [["GUIDE", 11.3]],
+    [["AND", 12.2], ["I'LL", 12.4], ["SEND", 12.7], ["IT", 13.0]]
+  ]
+}

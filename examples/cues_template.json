@@ -1,0 +1,12 @@
+{
+  "end": 20,
+  "sfx": [
+    { "file": "pulse1.wav", "t": 2.6, "peak": -12 },
+    { "file": "pulse2.wav", "t": 5.2, "peak": -10 },
+    { "file": "pulse3.wav", "t": 7.8, "peak": -8 },
+    { "file": "pulse4.wav", "t": 10.4, "peak": -6 },
+    { "file": "pulse5.wav", "t": 13.0, "peak": -4 },
+    { "file": "pulse6.wav", "t": 15.6, "peak": -2 }
+  ],
+  "music": []
+}
